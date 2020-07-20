@@ -1,11 +1,11 @@
 # URLshortening
-[![](https://data.jsdelivr.com/v1/package/gh/soxft/Urlshorting/badge)](https://www.jsdelivr.com/package/gh/soxft/Urlshorting)
+[![](https://data.jsdelivr.com/v1/package/gh/pplulee/Urlshorting/badge)](https://www.jsdelivr.com/package/gh/pplulee/Urlshorting)
 <a href="http://www.apache.org/licenses/LICENSE-2.0.html"> 
 <img src="https://img.shields.io/github/license/soxft/URLshorting.svg" alt="License"></a>
 <a href="https://github.com/soxft/URLshorting/stargazers"> 
-<img src="https://img.shields.io/github/stars/soxft/URLshorting.svg" alt="GitHub stars"></a>
+<img src="https://img.shields.io/github/stars/pplulee/URLshorting.svg" alt="GitHub stars"></a>
 <a href="https://github.com/soxft/URLshorting/network/members"> 
-<img src="https://img.shields.io/github/forks/soxft/URLshorting.svg" alt="GitHub forks"></a> 
+<img src="https://img.shields.io/github/forks/pplulee/URLshorting.svg" alt="GitHub forks"></a> 
 ## 简介
 一个url网址缩短平台.
 ## 安装方法
@@ -35,7 +35,11 @@ IIS请尝试自己转换.
 ## 版权
 原作者xcsoft版权所有 二次开发pplulee
 ## 更新
+v2.0.1
+1.紧急修复密语无法显示
+2.默认位数增加到8
+
 v2.0.0
-<br />1.支持自定义短链后缀.
-<br />2.支持相同网址生成新连接.
-<br />3.简化部分代码.
+1.支持自定义短链后缀.
+2.支持相同网址生成新连接.
+3.简化部分代码.
