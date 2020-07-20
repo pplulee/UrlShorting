@@ -1,9 +1,3 @@
-<!--
-版权归属:XCSOFT
-修改时间:2019/06/28
-邮箱:contact#xcsoft.top(用@替换#)
-如有任何问题欢迎联系!
--->
 <?php
 require_once('../config.php');
 //包括上一个文件夹的config.php

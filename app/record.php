@@ -6,7 +6,7 @@ function access($shorturl,$domain,$type){
 global $conn;
 global $ip;
 global $time;
-$access="insert into access values('$shorturl','$domain','$type','$ip','$time');";
+$access="INSERT INTO access VALUES('$shorturl','$domain','$type','$ip','$time');";
 $go=mysqli_query($conn,$access);
 }
 ?>

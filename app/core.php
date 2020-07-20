@@ -68,7 +68,7 @@ function Urlshorting($content,$type,$customize) {
          return array(1003);
          exit();
      }else if ($customize!="" && CheckRepeat($customize)==TRUE){
-         mysqli_query($conn,"INSERT INTO `information` VALUES('$content','$customize','shorturl','$time','$ip');");
+         mysqli_query($conn,"INSERT INTO `information` VALUES('$content','$customize','$type','$time','$ip');");
          return array(200,$url . $customize);
          exit();
      }
@@ -77,11 +77,7 @@ function Urlshorting($content,$type,$customize) {
      while (CheckRepeat($shorturl)==FALSE) {
          $shorturl = GenerateLink();
      }
-     if ($type=="shorturl"){
-         mysqli_query($conn,"INSERT INTO `information` VALUES('$content','$shorturl','shorturl','$time','$ip');");
-     }else {
-         mysqli_query($conn,"INSERT INTO `information` VALUES('$content','$shorturl','passmessage','$time','$ip');");
-     }
+     mysqli_query($conn,"INSERT INTO `information` VALUES('$content','$shorturl','$type','$time','$ip');");
      return array(200,$url . $shorturl);
      exit();
 }

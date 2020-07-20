@@ -1,4 +1,3 @@
-<html>
 <head>
     <title>短域管理</title>
     <?php
@@ -98,6 +97,6 @@ if($check2=="正常"){
     //按钮跳转
     echo "<br />";
     ?>
-</body>
+</head>
 <?php require_once("../footer.php");
 ?>

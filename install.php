@@ -50,7 +50,7 @@
       </div>
       <div class="mdui-textfield mdui-textfield-floating-label">
         <label class="mdui-textfield-label">短网址后需要的字母或数字个数</label>
-        <input name="pass" type="text" class="mdui-textfield-input" value="4" />
+        <input name="pass" type="text" class="mdui-textfield-input" value="8" />
       </div>
       <div class="mdui-textfield mdui-textfield-floating-label">
         <label class="mdui-textfield-label">短网址包含的内容</label>
@@ -127,7 +127,7 @@
         $sql9 = "INSERT INTO `config` VALUES('wechat','true');";
         $sql10 = "INSERT INTO `config` VALUES('jump','true');";
         $sql11 = "INSERT INTO `config` VALUES('px','25');";
-        $sql12 = "INSERT INTO `config` VALUES('version','2.0.0');";
+        $sql12 = "INSERT INTO `config` VALUES('version','2.0.1');";
         mysqli_query($conn,$accessx);
         mysqli_query($conn,$banx);
         mysqli_query($conn,$informationx);
