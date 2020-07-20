@@ -1,15 +1,15 @@
-<title>星辰安装系统</title>
+<title>安装</title>
 <body background="./assets/img/background.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta charset="utf-8">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/mdui/0.4.2/css/mdui.min.css">
   <script src="//cdnjs.cloudflare.com/ajax/libs/mdui/0.4.2/js/mdui.min.js"></script>
   <br />
-  <center><h2>星辰网站安装系统</h2></center>
+  <center><h2>短网址网站安装</h2></center>
   <?php
   $lockfile = "install.lock";
   if (file_exists($lockfile)) {
-    exit("<center><h3>您已经安装过了，如果需要重新安装请先删除根目录下的install.lock(如果你只需要修改内容请访问数据库修改config表<br />如有疑问请加qq群：657529886)</center></h3>");
+    exit("<center><h3>您已经安装过了，如果需要重新安装请先删除根目录下的install.lock</center></h3>");
   }
   if (!isset($_POST['submit'])) {
     ?>
@@ -42,11 +42,11 @@
       </div>
       <div class="mdui-textfield mdui-textfield-floating-label">
         <label class="mdui-textfield-label">网站标题(网页中所显示的)</label>
-        <input name="title1" type="text" class="mdui-textfield-input" value="星辰短域|密语" />
+        <input name="title1" type="text" class="mdui-textfield-input" value="短域|密语" />
       </div>
       <div class="mdui-textfield mdui-textfield-floating-label">
         <label class="mdui-textfield-label">网站标题(网页标签所显示的)</label>
-        <input name="title" type="text" class="mdui-textfield-input" value="星辰短域|密语" />
+        <input name="title" type="text" class="mdui-textfield-input" value="短域|密语" />
       </div>
       <div class="mdui-textfield mdui-textfield-floating-label">
         <label class="mdui-textfield-label">短网址后需要的字母或数字个数</label>
@@ -127,7 +127,7 @@
         $sql9 = "INSERT INTO `config` VALUES('wechat','true');";
         $sql10 = "INSERT INTO `config` VALUES('jump','true');";
         $sql11 = "INSERT INTO `config` VALUES('px','25');";
-        $sql12 = "INSERT INTO `config` VALUES('version','1.8.1');";
+        $sql12 = "INSERT INTO `config` VALUES('version','2.0.0');";
         mysqli_query($conn,$accessx);
         mysqli_query($conn,$banx);
         mysqli_query($conn,$informationx);
@@ -180,9 +180,9 @@
       fwrite($fp2,'安装锁文件,请勿删除!');
       fclose($fp2);
       //写注册锁
-      echo "<br/><center><h1>安装成功!4s后将为您自动跳转到后台登录界面!</h1></center>";
+      echo "<br/><center><h1>安装成功!5s后将为您自动跳转到后台登录界面!</h1></center>";
       echo "<br/><center><h1>你可以进入后台进入更多设置！</h1></center>";
-      echo "<br/><center><h2>非宝塔一键部署用户请注意,你还需要自己手动配置网站伪静态.网站伪静态配置信息请参考根目录下`README.md`中所写内容.</h2></center>";
-      header("Refresh:4;url=\"./admin/\"");
+      echo "<br/><center><h2>若有需要，请手动配置伪静态。网站伪静态配置信息请参考根目录下`README.md`中所写内容.</h2></center>";
+      header("Refresh:5;url=\"./admin/\"");
     }
     ?>

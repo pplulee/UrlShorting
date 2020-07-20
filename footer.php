@@ -14,12 +14,12 @@
     catch (function (err) {
         console.error(err);
     })
-    console.log("\n %c 星辰短域|密语 %c Powered by XCSOFT | xsot.cn ", "color:#444;background:#eee;padding:5px 0;", "color:#eee;background:#444;padding:5px 0;");
+    console.log("\n %c 短域|密语");
     </script>
-    <center>
+    <div style="text-align: center;">
         <div class="mdui-divider"></div>
         <p id="hitokoto">:D 获取中...</p>
-        <div class="footer-copyright">Copyright © 2019-
-            <?php echo date( 'Y') ?> <a class="mdui-text-color-grey-800" href="http://xsot.cn">XCSOFT</a> All rights reserved.</div>
-    </center>
+        <div class="footer-copyright">Copyright ©
+            <?php echo date( 'Y') ?> <a class="mdui-text-color-grey-800" href="http://xsot.cn">XCSOFT</a> & <a class="mdui-text-color-grey-800" href="https://github.com/pplulee">baiyimiao</a> All rights reserved.</div>
+    </div>
 </footer>

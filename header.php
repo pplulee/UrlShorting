@@ -88,7 +88,6 @@ if (empty($id)) {
 }
 //初始判断结束,进入增加url界面
 ?>
-<html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
@@ -128,10 +127,6 @@ if (empty($id)) {
           <i class="mdui-list-item-icon mdui-icon material-icons">help_outline</i>
           &emsp;帮助
         </a>
-          <a href="./admin" class="mdui-list-item">
-            <i class="mdui-list-item-icon mdui-icon material-icons">person_outline</i>
-            &emsp;后台
-          </a>
         </div>
         <a href="./about.php" class="mdui-list-item">
           <i class="mdui-list-item-icon mdui-icon material-icons">info_outline</i>
@@ -144,10 +139,10 @@ if (empty($id)) {
             <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
           </div>
           <div class="mdui-collapse-item-body mdui-list">
-            <a href="//blog.xsot.cn" class="mdui-list-item mdui-ripple ">星辰日记</a>
+            <a href="//" class="mdui-list-item mdui-ripple ">友链1</a>
           </div>
           <div class="mdui-collapse-item-body mdui-list">
-            <a href="//love.xsot.cn" class="mdui-list-item mdui-ripple ">星辰表白墙</a>
+            <a href="//" class="mdui-list-item mdui-ripple ">友链2</a>
           </div>
         </div>
       </div>

@@ -7,6 +7,7 @@ if (!file_exists("install.lock")) {
 require_once "header.php";
 require_once "config.php";
 require_once "./app/delete.php";
+
 if (date("i")%20 == 0) {
     del("./qrcode/");
 }
@@ -58,6 +59,7 @@ if ($status == "passmessage") {
         <h2>短域</h2>
         <div class="mdui-textfield">
             <input id="content" time="content" class="mdui-textfield-input" type="text" placeholder="请输入链接或密语" />
+            <input id="customize" time="content" class="mdui-textfield-input" type="text" placeholder="请输入自定义后缀(可选)" />
         </div>
         <button onClick="Submit();" id="Submit" class="mdui-btn mdui-btn-dense mdui-color-theme-accent mdui-ripple">
           <i class="mdui-icon material-icons">send</i>
@@ -86,6 +88,7 @@ if ($status == "passmessage") {
   function Submit() {
     document.getElementById("Submit").innerHTML = "处理中...";
     var content = document.getElementById("content").value;
+    var customize = document.getElementById("customize").value;
     var type = getRadioBoxValue("type");
     if(type == "shorturl")
     {
@@ -94,7 +97,7 @@ if ($status == "passmessage") {
     var xhr = new XMLHttpRequest();
     xhr.open("POST", "./submit.php");
     xhr.setRequestHeader('Content-Type', ' application/x-www-form-urlencoded');
-    xhr.send("content=" + content + "&type=" + type);
+    xhr.send("content=" + content + "&type=" + type + "&customize=" + customize);
     xhr.onreadystatechange = function () {
         if (xhr.readyState == 4 && xhr.status == 200) {
             document.getElementById("Submit").innerHTML = "<i class=\"mdui-icon material-icons\">send</i>";
